@@ -1,9 +1,10 @@
-# Luke's build of st - the simple (suckless) terminal
+# My Build
 
 The [suckless terminal (st)](https://st.suckless.org/) with some additional features that make it literally the best terminal emulator ever:
 
 ## Unique features (using dmenu)
 
++ **it blinks**
 + **follow urls** by pressing `alt-l`
 + **copy urls** in the same way with `alt-y`
 + **copy the output of commands** with `alt-o`
@@ -75,8 +76,3 @@ Note that when you run `wal`, it will negate the transparency of existing window
 If st crashes when viewing emojis, install [libxft-bgra](https://aur.archlinux.org/packages/libxft-bgra/) from the AUR.
 
 Note that some special characters may appear truncated if too wide. You might want to manually set your prefered emoji/special character font to a lower size in the `config.h` file to avoid this. By default, JoyPixels is used at a smaller size than the usual text.
-
-## Contact
-
-- Luke Smith <luke@lukesmith.xyz>
-- [https://lukesmith.xyz](https://lukesmith.xyz)
