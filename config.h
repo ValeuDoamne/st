@@ -5,7 +5,7 @@
  *
  * font: see http://freedesktop.org/software/fontconfig/fontconfig-user.html
  */
-static char *font = "hack:pixelsize=14:antialias=true:autohint=true";
+static char *font = "Source Code Variable:style=Regular:pixelsize=14:antialias=true:autohint=true";
 static char *font2[] = { "JoyPixels:pixelsize=10:antialias=true:autohint=true" };
 static int borderpx = 2;
 
@@ -55,7 +55,7 @@ static double maxlatency = 33;
  * blinking timeout (set to 0 to disable blinking) for the terminal blinking
  * attribute.
  */
-static unsigned int blinktimeout = 800;
+static unsigned int blinktimeout = 600;
 
 /*
  * interval (in milliseconds) between each successive call to ximspot. This
@@ -85,7 +85,7 @@ const int boxdraw_braille = 1;
  * bell volume. It must be a value between -100 and 100. Use 0 for disabling
  * it
  */
-static int bellvolume = 0;
+static int bellvolume = 100;
 
 /* default TERM value */
 char *termname = "st-256color";
@@ -110,6 +110,33 @@ unsigned int tabspaces = 8;
 /* bg opacity */
 float alpha = 0.6;
 
+/*
+div{
+
+	"#282828
+	"#cc241d",
+	"#80c700",
+	"#f7a921",
+	"#4585ff",
+	"#b16286",
+	"#a85d9a",
+	"#a89984",
+	"#9283ff",
+	"#fb4934",
+	"#b8bb26",
+	"#fabd2f",
+	"#43a5ff",
+	"#d3869b",
+	"#8ec07c",
+	"#ebdbb2",
+	"#add8e6
+	"#555555
+	#0d0d0d
+	#fefefe
+}
+*/
+
+
 /* Terminal colors (16 first used in escape sequence) */
 static const char *colorname[] = {
 	"#282828", /* hard contrast: #1d2021 / soft contrast: #32302f */
@@ -118,7 +145,7 @@ static const char *colorname[] = {
 	"#f7a921",
 	"#4585ff",
 	"#b16286",
-	"#a85d9a",
+	"#3f2ff5",
 	"#a89984",
 	"#9283ff",
 	"#fb4934",
@@ -159,15 +186,15 @@ unsigned int defaultrcs = 257;
  * 7: Blinking st cursor
  * 8: Steady st cursor
  */
-static unsigned int cursorstyle = 1;
+static unsigned int cursorstyle = 0;
 static Rune stcursor = 0x2603; /* snowman (U+2603) */
 
 /*
  * Default columns and rows numbers
  */
 
-static unsigned int cols = 80;
-static unsigned int rows = 24;
+static unsigned int cols = 133; // 80
+static unsigned int rows = 39; // 24
 
 /*
  * Default colour and shape of the mouse cursor
